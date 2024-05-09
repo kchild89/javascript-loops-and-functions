@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box1 {
+    background-color: rgb(99, 113, 23);
+    color: #fff;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.box1 h1 {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.box2 {
+    background-color: blue;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.box3 {
+    background-color: rgb(128, 41, 0);
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.box4 {
+    background-color: cyan;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.box5 {
+    background-color: orange;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
