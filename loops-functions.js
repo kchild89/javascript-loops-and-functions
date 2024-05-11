@@ -350,7 +350,7 @@ console.log(combineTwoStrings("Happy", "Birthday"));
 // Problem 5
 // Create a function called cubed.
 // This function will take one parameter.
-// Return the cubed number that is given from the parameter.
+// Return the cubed computer that is given from the parameter.
 
 function cubed(x) {
     let total = x ** 3;
@@ -362,7 +362,7 @@ console.log(cubed(2));
 // Problem 6
 // Create a function called squared.
 // This function will take one parameter.
-// Return the squared number that is given from the parameter.
+// Return the squared computer that is given from the parameter.
 
 function squared(x) {
     total = x ** 2;
@@ -393,8 +393,8 @@ console.log(sphereArea(2));
 // Create a function called rockPaperScissors()
 // This function will take one parameter which will be a string.
 // The string will be either 'rock', 'paper', or 'scissors'.
-// Have the computer pick a random number between 1 - 3 or 0 - 2.(Unsure of how to do this ? Check out this link https://www.w3schools.com/js/js_random.asp)
-// Based on that random number have the computers pick be either rock, paper, or scissors.
+// Have the computer pick a random computer between 1 - 3 or 0 - 2.(Unsure of how to do this ? Check out this link https://www.w3schools.com/js/js_random.asp)
+// Based on that random computer have the computers pick be either rock, paper, or scissors.
 // Determine who wins:
 // Rock beats scissors
 // Scissors beats paper
@@ -405,50 +405,114 @@ console.log(sphereArea(2));
 // If the user enters anything other than rock paper or scissors return the string 'I do not understand. Try entering rock, paper, or scissors'.
 // No tests on this one.It will be your job to thoroughly test your program.I will then review it.
 
-// if number 0 rock beats 2
-// if number 1 paper beats 0
-// if number 2 scissors beats 1
+// if computer 0 rock beats 2
+// if computer 1 paper beats 0
+// if computer 2 scissors beats 1
 
 
 
-function rockPaperScissors(userChoice) {
-    let number = Math.floor(Math.random() * 3);
+function rockPaperScissors(userInput) {
+    let computer = Math.floor(Math.random() * 3);
 
-    if (number === 0) {
-        number = 'rock';
-    } else if (number === 1) {
-        number = 'paper';
+    if (computer === 0) {
+        computer = 'rock';
+    } else if (computer === 1) {
+        computer = 'paper';
     } else {
-        number = 'scissors';
+        computer = 'scissors';
     }
 
-    if (userChoice === 'rock') {
-        if (number === 'scissors') {
-            return 'You win! I chose ' + number;
-        } else if (number === 'paper') {
-            return 'You lose! I chose ' + number;
+    if (userInput === 'rock') {
+        if (computer === 'scissors') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'paper') {
+            return 'You lose! I chose ' + computer;
         } else {
-            return 'It\'s a tie! I chose ' + number;
+            return 'It\'s a tie! I chose ' + computer;
         }
-    } else if (userChoice === 'paper') {
-        if (number === 'rock') {
-            return 'You win! I chose ' + number;
-        } else if (number === 'scissors') {
-            return 'You lose! I chose ' + number;
+    } else if (userInput === 'paper') {
+        if (computer === 'rock') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'scissors') {
+            return 'You lose! I chose ' + computer;
         } else {
-            return 'It\'s a tie! I chose ' + number;
+            return 'It\'s a tie! I chose ' + computer;
         }
-    } else if (userChoice === 'scissors') {
-        if (number === 'paper') {
-            return 'You win! I chose ' + number;
-        } else if (number === 'rock') {
-            return 'You lose! I chose ' + number;
+    } else if (userInput === 'scissors') {
+        if (computer === 'paper') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'rock') {
+            return 'You lose! I chose ' + computer;
         } else {
-            return 'It\'s a tie! I chose ' + number;
+            return 'It\'s a tie! I chose ' + computer;
         }
     } else {
         return 'I do not understand. Try entering rock, paper, or scissors.';
     }
 }
 
-console.log(rockPaperScissors('paper'));
+console.log(rockPaperScissors('rock'));
+
+
+function rockPaperScissors(userInput) {
+    let computer = Math.floor(Math.random() * 3);
+
+    if (computer === 0) {
+        computer = 'rock';
+    } else if (computer === 1) {
+        computer = 'paper';
+    } else {
+        computer = 'scissors';
+    }
+
+    if (userInput === 'rock') {
+        if (computer === 'scissors') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'paper') {
+            return 'You lose! I chose ' + computer;
+        } else {
+            return 'It\'s a tie! I chose ' + computer;
+        }
+    } else if (userInput === 'paper') {
+        if (computer === 'rock') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'scissors') {
+            return 'You lose! I chose ' + computer;
+        } else {
+            return 'It\'s a tie! I chose ' + computer;
+        }
+    } else if (userInput === 'scissors') {
+        if (computer === 'paper') {
+            return 'You win! I chose ' + computer;
+        } else if (computer === 'rock') {
+            return 'You lose! I chose ' + computer;
+        } else {
+            return 'It\'s a tie! I chose ' + computer;
+        }
+    } else {
+        return 'You need to pick rock, paper, or scissors!!'
+    }
+}
+
+console.log(rockPaperScissors('rock'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
